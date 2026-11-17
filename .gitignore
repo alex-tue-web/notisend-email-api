@@ -1,0 +1,34 @@
+# Composer
+/vendor/
+composer.phar
+/auth.json
+
+# Окружение и секреты — НИКОГДА в репозиторий
+.env
+.env.*
+!.env.example
+
+# Логи, кэш, временные файлы
+*.log
+/storage/
+/var/
+/tmp/
+/.phpunit.cache/
+.php-cs-fixer.cache
+.phpunit.result.cache
+
+# IDE
+.idea/
+.vscode/
+*.swp
+nbproject/
+
+# ОС
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Артефакты сборки
+/build/
+/dist/
+node_modules/

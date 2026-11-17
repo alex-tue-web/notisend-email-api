@@ -1,0 +1,25 @@
+{
+    "name": "notisend/email-api",
+    "description": "Notisend Email API client library for PHP (compatible with PHP 5.6)",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["notisend", "email", "api", "transactional-email"],
+    "homepage": "https://github.com/<VENDOR>/notisend-email-api",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "you@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Notisend\\EmailApi\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
