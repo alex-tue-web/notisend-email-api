@@ -1,13 +1,26 @@
 # Notisend Email API
 
+[![PHP](https://img.shields.io/badge/PHP-%3E%3D%205.6-777BB4?logo=php&logoColor=white)](#требования)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![ext-curl](https://img.shields.io/badge/ext--curl-required-4B8BBE)](#требования)
+[![ext-json](https://img.shields.io/badge/ext--json-required-000000)](#требования)
+[![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)](#требования)
+[![Composer](https://img.shields.io/badge/composer-%5E1.0-885630?logo=composer&logoColor=white)](#установка)
+[![PHP 5.6 compatible](https://img.shields.io/badge/PHP%205.6-compatible-success)](#совместимость)
+
 Объектно-ориентированная клиентская библиотека для [Email API Notisend](https://notisend.ru/) на PHP.
 Совместима с PHP 5.6+, внешних зависимостей нет — только встроенные расширения `curl` и `json`.
 
 ## Требования
 
-- PHP >= 5.6
-- Расширение `curl`
-- Расширение `json`
+| Требование | Минимальная версия | Обязательно | Примечание |
+|------------|--------------------|-------------|------------|
+| [PHP](https://www.php.net/) | **5.6** | Да | Синтаксис PHP 7+ не используется — пакет работает на legacy-окружениях, включая Joomla 2.5 |
+| [ext-curl](https://www.php.net/manual/ru/book.curl.php) | любая | Да | Все HTTP-запросы выполняются через cURL |
+| [ext-json](https://www.php.net/manual/ru/book.json.php) | любая | Да | Кодирование запросов и разбор ответов |
+| [Composer](https://getcomposer.org/) | 1.10.x (для PHP 5.6) | Да | Composer 2.x требует PHP 7.2.5+ — на PHP 5.6 используйте ветку 1.10.x |
+
+Внешних библиотек нет: ни Guzzle, ни других HTTP-клиентов устанавливать не нужно.
 
 ## Установка
 
