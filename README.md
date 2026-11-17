@@ -5,7 +5,7 @@
 [![ext-curl](https://img.shields.io/badge/ext--curl-required-4B8BBE)](#требования)
 [![ext-json](https://img.shields.io/badge/ext--json-required-000000)](#требования)
 [![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)](#требования)
-[![Composer](https://img.shields.io/badge/composer-%5E1.0-885630?logo=composer&logoColor=white)](#установка)
+[![Composer](https://img.shields.io/badge/composer-2.2%20LTS-885630?logo=composer&logoColor=white)](#требования)
 [![PHP 5.6 compatible](https://img.shields.io/badge/PHP%205.6-compatible-success)](#совместимость)
 
 Объектно-ориентированная клиентская библиотека для [Email API Notisend](https://notisend.ru/) на PHP.
@@ -18,7 +18,7 @@
 | [PHP](https://www.php.net/) | **5.6** | Да | Синтаксис PHP 7+ не используется — пакет работает на legacy-окружениях, включая Joomla 2.5 |
 | [ext-curl](https://www.php.net/manual/ru/book.curl.php) | любая | Да | Все HTTP-запросы выполняются через cURL |
 | [ext-json](https://www.php.net/manual/ru/book.json.php) | любая | Да | Кодирование запросов и разбор ответов |
-| [Composer](https://getcomposer.org/) | 1.10.x (для PHP 5.6) | Да | Composer 2.x требует PHP 7.2.5+ — на PHP 5.6 используйте ветку 1.10.x |
+| [Composer](https://getcomposer.org/) | **2.2.x (LTS)** | Да | Ветка 2.2 LTS поддерживает PHP 5.3–7.1, поэтому работает на PHP 5.6. Обычные 2.3+ требуют PHP 7.2.5+, а 1.10.x снят с поддержки (EOL 2026-05-30) |
 
 Внешних библиотек нет: ни Guzzle, ни других HTTP-клиентов устанавливать не нужно.
 
@@ -78,7 +78,9 @@ composer require "notisend/email-api:^2.0"
   проекта и может привести к несовместимостям — указывайте имя пакета.
 - **`dev-main` не для production.** Ветка отдаёт самый свежий коммит, включая
   незавершённую работу; для стабильных проектов используйте теги.
-- **Composer 2.x требует PHP 7.2.5+.** На PHP 5.6 работает только Composer 1.10.x.
+- **Composer 2.2.x (LTS) — рабочая ветка для PHP 5.6.** Она поддерживает PHP 5.3–7.1;
+  обычные 2.3+ требуют PHP 7.2.5+. Установить нужную ветку:
+  `php composer-setup.php --2.2`.
 
 ## Быстрый старт
 
